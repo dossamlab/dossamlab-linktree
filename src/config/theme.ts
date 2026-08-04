@@ -23,23 +23,23 @@ export type LinkTreeTheme = {
 
 export const theme: LinkTreeTheme = {
   colors: {
-    cream: "#F4F0EA",
-    ink: "#3A3532",
-    dim: "#8C847E",
-    rose: "#EAAEAC",
-    brown: "#655552",
-    denim: "#8A9DB0",
-    latte: "#E0CDBD",
-    border: "rgba(101,85,82,0.15)",
-    scrollTrack: "rgba(224,205,189,0.24)",
-    scrollThumb: "linear-gradient(180deg, rgba(101,85,82,0.68), rgba(138,157,176,0.58))",
-    scrollThumbHover: "linear-gradient(180deg, rgba(58,53,50,0.78), rgba(138,157,176,0.74))",
-    spiralFront: "#CC6B5E"
+    cream: "#F4F2F8",
+    ink: "#3B3A45",
+    dim: "#86838F",
+    rose: "#E7C6DC",
+    brown: "#5D5A6B",
+    denim: "#9BB4D4",
+    latte: "#CFE0D6",
+    border: "rgba(93,90,107,0.15)",
+    scrollTrack: "rgba(155,180,212,0.20)",
+    scrollThumb: "linear-gradient(180deg, rgba(93,90,107,0.60), rgba(155,180,212,0.55))",
+    scrollThumbHover: "linear-gradient(180deg, rgba(59,58,69,0.72), rgba(155,180,212,0.70))",
+    spiralFront: "#A9B8E8"
   },
   pillColors: [
-    { bg: "#EAAEAC", fg: "#3A3532" },
-    { bg: "#655552", fg: "#F4F0EA" },
-    { bg: "#8A9DB0", fg: "#F4F0EA" },
-    { bg: "#E0CDBD", fg: "#3A3532" }
+    { bg: "#E7C6DC", fg: "#3B3A45" },
+    { bg: "#CFE0D6", fg: "#3B3A45" },
+    { bg: "#9BB4D4", fg: "#2B2A33" },
+    { bg: "#F0E0BC", fg: "#3B3A45" }
   ]
 };

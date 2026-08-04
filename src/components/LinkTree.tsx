@@ -259,6 +259,10 @@ export default function LinkTree({ initialTab }: { initialTab?: string }) {
 
   return (
     <div className={`lt-root${introSkipped ? " lt-root-browsing" : ""}`} style={rootStyle}>
+      <div className="lt-deco" aria-hidden="true">
+        {[1, 2, 3, 4].map((n) => <span key={n} className={`lt-deco-spiral lt-deco-${n}`} />)}
+      </div>
+
       {!introSkipped ? <IntroOverlay onBrowse={browseLinks} /> : null}
 
       <header className="lt-header">

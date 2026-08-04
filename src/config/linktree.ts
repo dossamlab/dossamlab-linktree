@@ -46,12 +46,12 @@ export type LinkCard =
     };
 
 export const profile = {
-  teacherName: "OOO",
-  title: "DoRms 교사 OOO",
-  introTitle: "DoRms 교사 OOO",
-  introDescription: "환영합니다! 교육현장의 문제를 AI와 함께 재밌게 풀어보는 교사 커뮤니티 DoRms의 OOO입니다.",
-  catalogTitle: "DoRms OOO",
-  catalogDescription: "설명1. 수업, 기록, 자료, 커뮤니티 활동을 이곳에 모아둡니다."
+  teacherName: "도쌤",
+  title: "DoRms 교사 도쌤",
+  introTitle: "DoRms 교사 도쌤",
+  introDescription: "웹앱으로 신나는 학교를 만들어보고 싶은 도쌤의 링크트리",
+  catalogTitle: "DoRms 도쌤",
+  catalogDescription: "수업 웹앱, 학급 운영 도구, 연수 자료를 한곳에 모았습니다."
 };
 
 export const cards: LinkCard[] = [
@@ -63,63 +63,83 @@ export const cards: LinkCard[] = [
     description: "DoRms에서 나누고 있는 나의 활동을 모아두는 곳",
     thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" },
     items: [
-      { name: "내 활동 링크1", description: "설명1", href: "https://example.com", thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" } },
-      { name: "내 활동 링크2", description: "설명2", href: "https://example.com", thumb: { kind: "icon", icon: "dorms-community" } },
-      { name: "내 활동 링크3", description: "설명3", href: "https://example.com", thumb: { kind: "icon", icon: "docs" } }
+      {
+        name: "클로드코드 실전도구 대백과",
+        description: "웹앱 개발에 쓸 만한 도구와 스킬을 모아 정리한 자료",
+        href: "https://dorms.school/board/p/26859e1d-ec9f-4987-8e0d-ea5c33bddf6f",
+        thumb: { kind: "icon", icon: "code" }
+      },
+      {
+        name: "바이브코딩 연수자료 1차시",
+        description: "비개발자 선생님을 위한 바이브코딩 생존 가이드",
+        href: "https://dorms.school/board/p/ae132e96-b4ee-472f-beb9-9a9f7266c3ff",
+        thumb: { kind: "icon", icon: "manual" }
+      },
+      {
+        name: "바이브코딩 연수자료 2차시",
+        description: "AI와 함께 교실 도구를 만드는 실전 가이드",
+        href: "https://dorms.school/board/p/ed888c63-1ffe-4a23-b3db-7888b8666e20",
+        thumb: { kind: "icon", icon: "docs" }
+      }
     ]
   },
   {
     kind: "group",
-    id: "classroom",
+    id: "science-apps",
     number: "02",
-    name: "링크1",
-    description: "설명1",
-    thumb: { kind: "icon", icon: "school" },
+    name: "수업에서 바로 쓰는 과학 웹앱",
+    description: "설치 없이 링크 하나로 여는 과학 수업용 웹앱",
+    thumb: { kind: "icon", icon: "game" },
     items: [
-      { name: "내부 링크1", description: "설명1", href: "https://example.com", thumb: { kind: "icon", icon: "docs" } },
-      { name: "내부 링크2", description: "설명2", href: "https://example.com", thumb: { kind: "icon", icon: "manual" } },
-      { name: "내부 링크3", description: "설명3", href: "https://example.com", thumb: { kind: "icon", icon: "download" } }
+      {
+        name: "이중 슬릿 바코드 게임",
+        description: "파장과 슬릿 간격을 바꿔가며 간섭무늬를 익히는 물리 게임",
+        href: "https://dorms.school/apps/bf93ec92-e7ba-48a6-b9a1-836d6d1597f3",
+        thumb: { kind: "icon", icon: "game" }
+      },
+      {
+        name: "퀀텀 이스케이프: 라플라스의 실험실",
+        description: "원자모형부터 역학적 평형까지 5막으로 푸는 물리 방탈출",
+        href: "https://dorms.school/apps/0ce4cb41-88d0-4878-8ed7-f154ab3df50c",
+        thumb: { kind: "icon", icon: "game" }
+      },
+      {
+        name: "EcoInquiry 환경 탐구 도우미",
+        description: "우리 지역 특성에 맞는 환경 탐구 주제와 가설을 1분 만에",
+        href: "https://dorms.school/apps/c071e6b8-52d1-419b-81c6-4f09405c2975",
+        thumb: { kind: "icon", icon: "school" }
+      }
     ]
   },
   {
-    kind: "link",
-    id: "naver-blog",
+    kind: "group",
+    id: "classroom-tools",
     number: "03",
-    name: "네이버 블로그",
-    description: "설명2",
-    href: "https://blog.naver.com/",
-    thumb: { kind: "icon", icon: "naver-blog" }
+    name: "학급 운영과 업무 도우미",
+    description: "교실 운영과 행정 업무의 손을 덜어주는 도구",
+    thumb: { kind: "icon", icon: "school" },
+    items: [
+      {
+        name: "1인1역 정령 소환",
+        description: "1인1역을 해내면 씨앗을 모아 정령을 소환하는 학급 보상 시스템",
+        href: "https://dorms.school/apps/8fa612f1-50df-41ce-89a6-4856106b47c7",
+        thumb: { kind: "icon", icon: "school" }
+      },
+      {
+        name: "에듀파인 품의 도우미",
+        description: "견적서 캡처를 AI가 읽어 품의서와 품목 엑셀을 자동으로",
+        href: "https://dorms.school/apps/b83026b7-f061-4f1a-944e-2b2c3b5e834d",
+        thumb: { kind: "icon", icon: "manual" }
+      }
+    ]
   },
   {
     kind: "link",
     id: "instagram",
     number: "04",
-    name: "링크2",
-    description: "설명3",
-    href: "https://example.com",
+    name: "인스타그램",
+    description: "만드는 과정과 소식을 짧게 남기는 곳",
+    href: "https://www.instagram.com/dossam_lab",
     thumb: { kind: "icon", icon: "instagram" }
-  },
-  {
-    kind: "group",
-    id: "resources",
-    number: "05",
-    name: "자료 모음",
-    description: "설명4",
-    thumb: { kind: "icon", icon: "docs" },
-    items: [
-      { name: "자료 링크1", description: "설명1", href: "https://example.com", thumb: { kind: "icon", icon: "manual" } },
-      { name: "자료 링크2", description: "설명2", href: "https://example.com", thumb: { kind: "icon", icon: "download" } }
-    ]
-  },
-  {
-    kind: "group",
-    id: "contact",
-    number: "06",
-    name: "연락처",
-    description: "설명5",
-    thumb: { kind: "icon", icon: "contact" },
-    items: [
-      { name: "문의 링크", description: "설명1", href: "mailto:teacher@example.com", thumb: { kind: "icon", icon: "contact" } }
-    ]
   }
 ];

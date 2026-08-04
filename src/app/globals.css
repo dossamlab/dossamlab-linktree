@@ -6,7 +6,7 @@ html,
 body {
   margin: 0;
   min-height: 100%;
-  background: #F4F0EA;
+  background: #F4F2F8;
 }
 
 body {
@@ -28,11 +28,71 @@ nextjs-portal,
   min-height: 100svh;
   overflow-x: hidden;
   position: relative;
+  z-index: 0;
   background: var(--cream);
   color: var(--ink);
   font-family: var(--body);
   word-break: keep-all;
   -webkit-font-smoothing: antialiased;
+}
+
+.lt-root::before,
+.lt-deco {
+  position: fixed;
+  inset: 0;
+  z-index: -1;
+  pointer-events: none;
+}
+
+.lt-root::before {
+  content: "";
+  background:
+    radial-gradient(38rem 30rem at 6% 8%, color-mix(in srgb, var(--rose) 58%, transparent), transparent 68%),
+    radial-gradient(34rem 30rem at 94% 16%, color-mix(in srgb, var(--denim) 40%, transparent), transparent 66%),
+    radial-gradient(42rem 34rem at 80% 86%, color-mix(in srgb, var(--latte) 62%, transparent), transparent 68%),
+    radial-gradient(30rem 26rem at 12% 80%, color-mix(in srgb, var(--denim) 26%, transparent), transparent 66%);
+}
+
+.lt-deco-spiral {
+  position: absolute;
+  display: block;
+  background: url("/assets/spiral.svg") center / contain no-repeat;
+  opacity: 0.42;
+  animation: lt-spin linear infinite;
+}
+
+.lt-deco-1 {
+  left: 2%;
+  top: 14%;
+  width: 13rem;
+  height: 13rem;
+  animation-duration: 150s;
+}
+
+.lt-deco-2 {
+  right: 3%;
+  top: 18%;
+  width: 6.5rem;
+  height: 6.5rem;
+  animation-duration: 95s;
+  animation-direction: reverse;
+}
+
+.lt-deco-3 {
+  right: 7%;
+  bottom: 13%;
+  width: 9.5rem;
+  height: 9.5rem;
+  animation-duration: 190s;
+}
+
+.lt-deco-4 {
+  left: 9%;
+  bottom: 19%;
+  width: 5rem;
+  height: 5rem;
+  animation-duration: 110s;
+  animation-direction: reverse;
 }
 
 .lt-root ::selection {
@@ -131,7 +191,7 @@ nextjs-portal,
   align-items: center;
   justify-content: center;
   padding: 1.1rem 1.5rem;
-  background: linear-gradient(to bottom, var(--cream) 62%, rgba(244,240,234,0));
+  background: linear-gradient(to bottom, var(--cream) 62%, transparent);
 }
 
 .lt-brand {
@@ -480,6 +540,12 @@ nextjs-portal,
   font-size: 0.66rem;
 }
 
+@keyframes lt-spin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
 @keyframes lt-intro-card {
   0% {
     opacity: 0;
@@ -493,6 +559,15 @@ nextjs-portal,
 }
 
 @media (max-width: 768px) {
+  .lt-deco-spiral {
+    opacity: 0.3;
+  }
+
+  .lt-deco-1 { width: 8rem; height: 8rem; }
+  .lt-deco-2 { width: 4.5rem; height: 4.5rem; }
+  .lt-deco-3 { width: 6rem; height: 6rem; }
+  .lt-deco-4 { width: 3.5rem; height: 3.5rem; }
+
   .lt-catalog {
     padding-bottom: 7rem;
   }
@@ -613,7 +688,8 @@ nextjs-portal,
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .lt-intro-card {
+  .lt-intro-card,
+  .lt-deco-spiral {
     animation: none !important;
   }
 }
