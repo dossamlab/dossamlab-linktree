@@ -64,6 +64,42 @@ export const cards: LinkCard[] = [
     thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" },
     items: [
       {
+        name: "도쌤 프로필 (내 글·내 앱 모아보기)",
+        description: "DoRms에 쓴 글과 만든 앱을 한곳에서 모아보는 프로필 페이지",
+        href: "https://dorms.school/u/f7fed535-6427-460a-b339-2a5f58bb89a8",
+        thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" }
+      },
+      {
+        name: "AI 모델 대백과",
+        description: "코딩·추론·장문맥·멀티모달·속도비용·한국어 6개 영역으로 모델별 강세를 비교",
+        href: "https://dorms.school/board/p/b693c186-435f-46de-8b22-b60d2b8a4081",
+        thumb: { kind: "icon", icon: "code" }
+      },
+      {
+        name: "깃허브 대백과",
+        description: "교사 인증 회원 전용, 깃허브 활용법을 총정리한 자료",
+        href: "https://dorms.school/board/p/78e623f3-3bbc-4838-98f1-6e5832438966",
+        thumb: { kind: "icon", icon: "code" }
+      },
+      {
+        name: "바이브코딩 API키 대백과",
+        description: "API키 종류와 활용법, 요금 발생 여부까지 총정리한 가이드",
+        href: "https://dorms.school/board/p/1c238d0a-c453-4456-8bb5-ca4634c930a9",
+        thumb: { kind: "icon", icon: "privacy" }
+      },
+      {
+        name: "바이브코딩 프롬프트 백과사전",
+        description: "구글 AI, 안티그래비티 등 LLM 모델별 프롬프트 작성법 정리",
+        href: "https://dorms.school/board/p/5215d4c5-6f96-4f6b-94d4-bf42fa8cf52e",
+        thumb: { kind: "icon", icon: "docs" }
+      },
+      {
+        name: "웹디자인 대백과",
+        description: "바이브코딩하며 막혔던 웹디자인 용어와 자료를 모은 정리",
+        href: "https://dorms.school/board/p/13cd2792-4c8b-48f0-b5d7-50bdb75d970b",
+        thumb: { kind: "icon", icon: "magazine" }
+      },
+      {
         name: "클로드코드 실전도구 대백과",
         description: "웹앱 개발에 쓸 만한 도구와 스킬을 모아 정리한 자료",
         href: "https://dorms.school/board/p/26859e1d-ec9f-4987-8e0d-ea5c33bddf6f",
@@ -104,10 +140,22 @@ export const cards: LinkCard[] = [
         thumb: { kind: "icon", icon: "game" }
       },
       {
+        name: "퀀텀 이스케이프 II: 세컨드 오빗",
+        description: "역학과 에너지를 주제로 3개 방, 15개 장치를 푸는 물리 방탈출",
+        href: "https://dorms.school/apps/602d7eb5-a18f-4b87-bdb8-8e8b56fedcbb?cat=%EA%B5%90%EA%B3%BC%C2%B7%EC%88%98%EC%97%85",
+        thumb: { kind: "icon", icon: "game" }
+      },
+      {
         name: "EcoInquiry 환경 탐구 도우미",
         description: "우리 지역 특성에 맞는 환경 탐구 주제와 가설을 1분 만에",
         href: "https://dorms.school/apps/c071e6b8-52d1-419b-81c6-4f09405c2975",
         thumb: { kind: "icon", icon: "school" }
+      },
+      {
+        name: "별헤는 교실",
+        description: "관측 위치와 날짜로 실제 밤하늘을 재현하는 천체관측 수업 플래네타리움",
+        href: "https://dorms.school/apps/7892e65a-1cdd-4424-ab12-c2f0fa14101c?cat=%EA%B5%90%EA%B3%BC%C2%B7%EC%88%98%EC%97%85&sort=hot&layout=card",
+        thumb: { kind: "icon", icon: "game" }
       }
     ]
   },
@@ -141,5 +189,14 @@ export const cards: LinkCard[] = [
     description: "만드는 과정과 소식을 짧게 남기는 곳",
     href: "https://www.instagram.com/dossam_lab",
     thumb: { kind: "icon", icon: "instagram" }
+  },
+  {
+    kind: "link",
+    id: "contact",
+    number: "05",
+    name: "연락처",
+    description: "dossamlab@gmail.com",
+    href: "mailto:dossamlab@gmail.com",
+    thumb: { kind: "icon", icon: "contact" }
   }
 ];
