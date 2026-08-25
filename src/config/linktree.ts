@@ -70,6 +70,12 @@ export const cards: LinkCard[] = [
         thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" }
       },
       {
+        name: "작업환경 대백과",
+        description: "터미널, GUI 앱, IDE, 오케스트레이터 중 학교 PC에서 뭘 쓸지 비교",
+        href: "https://dorms.school/board/p/86f872c4-ecfe-42bd-91e7-1bea6e619d5a",
+        thumb: { kind: "icon", icon: "code" }
+      },
+      {
         name: "AI 모델 대백과",
         description: "코딩·추론·장문맥·멀티모달·속도비용·한국어 6개 영역으로 모델별 강세를 비교",
         href: "https://dorms.school/board/p/b693c186-435f-46de-8b22-b60d2b8a4081",
