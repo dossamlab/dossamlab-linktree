@@ -70,6 +70,12 @@ export const cards: LinkCard[] = [
         thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" }
       },
       {
+        name: "안티그래비티 교사용 하네스 패키지",
+        description: "교사 인증 회원 전용, 안티그래비티용 교사 하네스 패키지",
+        href: "https://dorms.school/board/p/016814f4-d12d-4846-8c02-d5cb648880cb",
+        thumb: { kind: "icon", icon: "download" }
+      },
+      {
         name: "작업환경 대백과",
         description: "터미널, GUI 앱, IDE, 오케스트레이터 중 학교 PC에서 뭘 쓸지 비교",
         href: "https://dorms.school/board/p/86f872c4-ecfe-42bd-91e7-1bea6e619d5a",
