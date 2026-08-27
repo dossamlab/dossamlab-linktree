@@ -158,6 +158,24 @@ export const cards: LinkCard[] = [
         thumb: { kind: "icon", icon: "game" }
       },
       {
+        name: "세포 이스케이프: 항상성 붕괴",
+        description: "구성물질부터 광합성까지, 3개 막으로 푸는 세포와 물질대사 방탈출",
+        href: "https://dorms.school/apps/0d294a5a-001e-41db-ab65-b659d988f0be",
+        thumb: { kind: "icon", icon: "game" }
+      },
+      {
+        name: "사이언스 레거시: 세 개의 유산",
+        description: "애닝의 발굴장부터 미래 심의회까지, 3개 관·10개 장치로 푸는 통합과학2 방탈출",
+        href: "https://dorms.school/apps/ee717e6f-2621-4b1f-860a-7e4c5b80fcc7",
+        thumb: { kind: "icon", icon: "game" }
+      },
+      {
+        name: "도쌤Lab 역학과 에너지 탐구 시뮬레이터",
+        description: "실험 기구 없이 링크 하나로 조작하고 기록하는 역학과 에너지 탐구활동 15종",
+        href: "https://dorms.school/apps/e87b31ed-c1f7-4704-90c4-9f24b8795b59",
+        thumb: { kind: "icon", icon: "school" }
+      },
+      {
         name: "EcoInquiry 환경 탐구 도우미",
         description: "우리 지역 특성에 맞는 환경 탐구 주제와 가설을 1분 만에",
         href: "https://dorms.school/apps/c071e6b8-52d1-419b-81c6-4f09405c2975",
