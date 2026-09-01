@@ -214,12 +214,6 @@ export const cards: LinkCard[] = [
         description: "견적서 캡처를 AI가 읽어 품의서와 품목 엑셀을 자동으로",
         href: "https://dorms.school/apps/b83026b7-f061-4f1a-944e-2b2c3b5e834d",
         thumb: { kind: "icon", icon: "manual" }
-      },
-      {
-        name: "ESCORT 교무업무·학교폭력 사안처리 도우미",
-        description: "교사 인증 회원 전용, 매뉴얼 근거 쪽수까지 짚어주는 교무업무 AI",
-        href: "https://dorms.school/apps/11d5ae3c-f816-44f0-b22c-a1c9085e2bc5",
-        thumb: { kind: "icon", icon: "privacy" }
       }
     ]
   },
