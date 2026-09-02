@@ -100,13 +100,13 @@ export const cards: LinkCard[] = [
         thumb: { kind: "icon", icon: "code" }
       },
       {
-        name: "바이브코딩 API키 대백과",
+        name: "API키 대백과",
         description: "API키 종류와 활용법, 요금 발생 여부까지 총정리한 가이드",
         href: "https://dorms.school/board/p/1c238d0a-c453-4456-8bb5-ca4634c930a9",
         thumb: { kind: "icon", icon: "privacy" }
       },
       {
-        name: "바이브코딩 프롬프트 백과사전",
+        name: "프롬프트 대백과",
         description: "구글 AI, 안티그래비티 등 LLM 모델별 프롬프트 작성법 정리",
         href: "https://dorms.school/board/p/5215d4c5-6f96-4f6b-94d4-bf42fa8cf52e",
         thumb: { kind: "icon", icon: "docs" }
@@ -118,7 +118,7 @@ export const cards: LinkCard[] = [
         thumb: { kind: "icon", icon: "magazine" }
       },
       {
-        name: "클로드코드 실전도구 대백과",
+        name: "클로드코드 대백과",
         description: "웹앱 개발에 쓸 만한 도구와 스킬을 모아 정리한 자료",
         href: "https://dorms.school/board/p/26859e1d-ec9f-4987-8e0d-ea5c33bddf6f",
         thumb: { kind: "icon", icon: "code" }
