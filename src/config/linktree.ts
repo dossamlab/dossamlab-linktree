@@ -108,6 +108,8 @@ export const cards: LinkCard[] = [
     name: "수업에서 바로 쓰는 과학 웹앱",
     description: "설치 없이 링크 하나로 여는 과학 수업용 웹앱",
     thumb: { kind: "icon", icon: "game" },
+    // "세포 이스케이프: 항상성 붕괴"(dorms.school/apps/0d294a5a-...)는 아이디어만 제공한
+    // 다른 제작자의 앱이므로 이 목록에 넣지 않는다.
     items: [
       {
         name: "이중 슬릿 바코드 게임",
@@ -125,12 +127,6 @@ export const cards: LinkCard[] = [
         name: "퀀텀 이스케이프 II: 세컨드 오빗",
         description: "역학과 에너지를 주제로 3개 방, 15개 장치를 푸는 물리 방탈출",
         href: "https://dorms.school/apps/602d7eb5-a18f-4b87-bdb8-8e8b56fedcbb?cat=%EA%B5%90%EA%B3%BC%C2%B7%EC%88%98%EC%97%85",
-        thumb: { kind: "icon", icon: "game" }
-      },
-      {
-        name: "세포 이스케이프: 항상성 붕괴",
-        description: "구성물질부터 광합성까지, 3개 막으로 푸는 세포와 물질대사 방탈출",
-        href: "https://dorms.school/apps/0d294a5a-001e-41db-ab65-b659d988f0be",
         thumb: { kind: "icon", icon: "game" }
       },
       {
