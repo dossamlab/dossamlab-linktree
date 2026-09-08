@@ -70,10 +70,10 @@ export const cards: LinkCard[] = [
         thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" }
       },
       {
-        name: "배포 대백과",
-        description: "프로젝트 성격과 보안 중요도에 따라 배포 도구를 고르는 법",
-        href: "https://dorms.school/board/p/2671c3d0-be9d-4e89-bcda-83cb561dc446",
-        thumb: { kind: "icon", icon: "code" }
+        name: "도키피디아 웹북 (대백과 통합본)",
+        description: "교사를 위한 AI·바이브코딩 대백과 열 권을 주소 하나로 모은 최신판",
+        href: "https://dorms.school/apps/59f229d0-9f18-41e1-a708-4b73d83ab6c2",
+        thumb: { kind: "icon", icon: "magazine" }
       },
       {
         name: "안티그래비티 교사용 하네스 패키지",
@@ -82,46 +82,10 @@ export const cards: LinkCard[] = [
         thumb: { kind: "icon", icon: "download" }
       },
       {
-        name: "작업환경 대백과",
-        description: "터미널, GUI 앱, IDE, 오케스트레이터 중 학교 PC에서 뭘 쓸지 비교",
-        href: "https://dorms.school/board/p/86f872c4-ecfe-42bd-91e7-1bea6e619d5a",
-        thumb: { kind: "icon", icon: "code" }
-      },
-      {
-        name: "AI 모델 대백과",
-        description: "코딩·추론·장문맥·멀티모달·속도비용·한국어 6개 영역으로 모델별 강세를 비교",
-        href: "https://dorms.school/board/p/b693c186-435f-46de-8b22-b60d2b8a4081",
-        thumb: { kind: "icon", icon: "code" }
-      },
-      {
-        name: "깃허브 대백과",
-        description: "교사 인증 회원 전용, 깃허브 활용법을 총정리한 자료",
-        href: "https://dorms.school/board/p/78e623f3-3bbc-4838-98f1-6e5832438966",
-        thumb: { kind: "icon", icon: "code" }
-      },
-      {
-        name: "API키 대백과",
-        description: "API키 종류와 활용법, 요금 발생 여부까지 총정리한 가이드",
-        href: "https://dorms.school/board/p/1c238d0a-c453-4456-8bb5-ca4634c930a9",
-        thumb: { kind: "icon", icon: "privacy" }
-      },
-      {
-        name: "프롬프트 대백과",
-        description: "구글 AI, 안티그래비티 등 LLM 모델별 프롬프트 작성법 정리",
-        href: "https://dorms.school/board/p/5215d4c5-6f96-4f6b-94d4-bf42fa8cf52e",
-        thumb: { kind: "icon", icon: "docs" }
-      },
-      {
-        name: "웹디자인 대백과",
-        description: "바이브코딩하며 막혔던 웹디자인 용어와 자료를 모은 정리",
-        href: "https://dorms.school/board/p/13cd2792-4c8b-48f0-b5d7-50bdb75d970b",
-        thumb: { kind: "icon", icon: "magazine" }
-      },
-      {
-        name: "클로드코드 대백과",
-        description: "웹앱 개발에 쓸 만한 도구와 스킬을 모아 정리한 자료",
-        href: "https://dorms.school/board/p/26859e1d-ec9f-4987-8e0d-ea5c33bddf6f",
-        thumb: { kind: "icon", icon: "code" }
+        name: "교과 방탈출 제작 키트",
+        description: "교과 내용으로 방탈출 게임을 직접 만들 수 있는 제작 키트",
+        href: "https://dorms.school/board/p/5ad32362-79ef-4c3f-96c5-a76a1c5216d1",
+        thumb: { kind: "icon", icon: "game" }
       },
       {
         name: "바이브코딩 연수자료 1차시",
