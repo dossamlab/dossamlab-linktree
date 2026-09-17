@@ -108,8 +108,8 @@ export const cards: LinkCard[] = [
     name: "수업에서 바로 쓰는 과학 웹앱",
     description: "설치 없이 링크 하나로 여는 과학 수업용 웹앱",
     thumb: { kind: "icon", icon: "game" },
-    // "세포 이스케이프: 항상성 붕괴"(dorms.school/apps/0d294a5a-...)는 아이디어만 제공한
-    // 다른 제작자의 앱이므로 이 목록에 넣지 않는다.
+    // DoRms에서 다른 제작자가 올리고 도쌤이 "함께 만든"으로만 표시된 앱은 넣지 않는다.
+    // 예: "세포 이스케이프: 항상성 붕괴"(apps/0d294a5a-...), "딱! 이만큼-생활 연구소 방탈출"(apps/6573d388-...)
     items: [
       {
         name: "이중 슬릿 바코드 게임",
@@ -174,6 +174,12 @@ export const cards: LinkCard[] = [
         description: "견적서 캡처를 AI가 읽어 품의서와 품목 엑셀을 자동으로",
         href: "https://dorms.school/apps/b83026b7-f061-4f1a-944e-2b2c3b5e834d",
         thumb: { kind: "icon", icon: "manual" }
+      },
+      {
+        name: "오늘의 기분",
+        description: "QR 한 번으로 퀴즈·찬반 토론·워드클라우드 응답을 화면에 실시간으로 모으는 도구",
+        href: "https://dorms.school/apps/80dcc2aa-0fe7-472f-acc9-b39f08f8ac29",
+        thumb: { kind: "icon", icon: "school" }
       }
     ]
   },
