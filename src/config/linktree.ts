@@ -130,15 +130,21 @@ export const cards: LinkCard[] = [
         thumb: { kind: "icon", icon: "game" }
       },
       {
+        name: "감마 그랑프리",
+        description: "빛의 속도가 350 km/h인 서킷에서 시간 팽창·길이 수축을 직접 겪는 특수 상대성 이론 레이싱",
+        href: "https://dorms.school/apps/1153fbab-4ff9-4e17-aee8-79dfc55fa33d",
+        thumb: { kind: "icon", icon: "game" }
+      },
+      {
         name: "사이언스 레거시: 세 개의 유산",
         description: "애닝의 발굴장부터 미래 심의회까지, 3개 관·10개 장치로 푸는 통합과학2 방탈출",
         href: "https://dorms.school/apps/ee717e6f-2621-4b1f-860a-7e4c5b80fcc7",
         thumb: { kind: "icon", icon: "game" }
       },
       {
-        name: "도쌤Lab 역학과 에너지 탐구 시뮬레이터",
-        description: "실험 기구 없이 링크 하나로 조작하고 기록하는 역학과 에너지 탐구활동 15종",
-        href: "https://dorms.school/apps/e87b31ed-c1f7-4704-90c4-9f24b8795b59",
+        name: "도쌤Lab 통합 과학 탐구 시뮬레이터",
+        description: "중학 과학부터 고등 물리·화학·통합과학까지, 3D 탐구활동 15종을 담은 통합본",
+        href: "https://dorms.school/apps/efbc012b-1c0e-4b20-8def-6f9460bb89d4",
         thumb: { kind: "icon", icon: "school" }
       },
       {
