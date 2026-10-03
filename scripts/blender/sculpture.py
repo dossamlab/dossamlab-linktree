@@ -449,8 +449,11 @@ if args.mode in ("test", "turntable"):
         render_to(f"{OUT_DIR}/test.png")
     else:
         for i in range(args.frames):
+            path = f"{OUT_DIR}/sculpture/f-{i:03d}.png"
+            if os.path.exists(path):  # resume an interrupted run; delete the folder to start over
+                continue
             sculpture.rotation_euler.z = 2 * math.pi * i / args.frames
-            render_to(f"{OUT_DIR}/sculpture/f-{i:03d}.png")
+            render_to(path)
 else:
     setup_view(target_z=0.5, distance=3.4, elevation=20, lens=60)
     for kind in ("dorms", "science", "classroom"):

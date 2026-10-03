@@ -21,15 +21,37 @@ for (const file of pngsIn(RAW_DIR)) {
   }
 }
 
-const frames = pngsIn(path.join(RAW_DIR, "render/sculpture"));
-for (const width of [600, 400]) {
-  if (!frames.length) break;
-  mkdirSync(`public/visuals/sculpture/${width}`, { recursive: true });
+const SCULPTURE_DIR = path.join(RAW_DIR, "render/sculpture");
+const frames = pngsIn(SCULPTURE_DIR);
+if (frames.length) {
+  // One square crop for every frame: the union of what the sculpture covers at each angle,
+  // so the empty margin goes away without the turntable jumping between frames.
+  const box = { left: Infinity, top: Infinity, right: 0, bottom: 0 };
+  let size = 0;
   for (const file of frames) {
-    const out = `public/visuals/sculpture/${width}/${path.basename(file, ".png")}.webp`;
-    await sharp(path.join(RAW_DIR, "render/sculpture", file)).resize(width, width).webp({ quality: 78, alphaQuality: 90 }).toFile(out);
+    const source = path.join(SCULPTURE_DIR, file);
+    size = (await sharp(source).metadata()).width;
+    const { info } = await sharp(source).trim().toBuffer({ resolveWithObject: true });
+    const left = -info.trimOffsetLeft;
+    const top = -info.trimOffsetTop;
+    box.left = Math.min(box.left, left);
+    box.top = Math.min(box.top, top);
+    box.right = Math.max(box.right, left + info.width);
+    box.bottom = Math.max(box.bottom, top + info.height);
   }
-  console.log(`public/visuals/sculpture/${width}/ (${frames.length} frames)`);
+  const side = Math.min(size, Math.round(Math.max(box.right - box.left, box.bottom - box.top) * 1.04));
+  const clamp = (value) => Math.max(0, Math.min(size - side, Math.round(value)));
+  const crop = { left: clamp((box.left + box.right - side) / 2), top: clamp((box.top + box.bottom - side) / 2), width: side, height: side };
+  console.log(`sculpture crop ${JSON.stringify(crop)} of ${size}px`);
+
+  for (const width of [720, 480]) {
+    mkdirSync(`public/visuals/sculpture/${width}`, { recursive: true });
+    for (const file of frames) {
+      const out = `public/visuals/sculpture/${width}/${path.basename(file, ".png")}.webp`;
+      await sharp(path.join(SCULPTURE_DIR, file)).extract(crop).resize(width, width).webp({ quality: 74, alphaQuality: 80 }).toFile(out);
+    }
+    console.log(`public/visuals/sculpture/${width}/ (${frames.length} frames)`);
+  }
 }
 
 const emblems = pngsIn(path.join(RAW_DIR, "render/emblems"));

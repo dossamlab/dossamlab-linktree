@@ -215,15 +215,15 @@ nextjs-portal,
 .sr-sculpture {
   position: relative;
   z-index: 0;
-  width: min(78vw, 52vh, 460px);
+  width: min(94vw, 74vh, 660px);
   aspect-ratio: 1;
-  margin: 4px auto -110px;
+  margin: 0 auto -130px;
 }
 
 .sr-sculpture::before {
   content: "";
   position: absolute;
-  inset: 12% 8% 18%;
+  inset: 6% 10% 28%;
   z-index: -1;
   border-radius: 50%;
   background: radial-gradient(circle, rgba(242, 200, 121, 0.28), rgba(127, 143, 230, 0.16) 45%, transparent 70%);
@@ -238,7 +238,7 @@ nextjs-portal,
 
 @media (max-width: 767px) {
   .sr-sculpture {
-    margin-bottom: -70px;
+    margin-bottom: -80px;
   }
 }
 

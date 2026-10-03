@@ -38,7 +38,7 @@ for (const item of items) {
 }
 
 // HeroSculpture.tsx expects 60 turntable frames in both sizes.
-for (const size of [600, 400]) {
+for (const size of [720, 480]) {
   for (let i = 0; i < 60; i++) {
     const file = `public/visuals/sculpture/${size}/f-${String(i).padStart(3, "0")}.webp`;
     assert.ok(existsSync(file), `조형물 그림 없음: ${file}`);

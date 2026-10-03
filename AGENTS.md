@@ -29,7 +29,7 @@
 - 아이콘 파일: `public/icons/*.svg`
 - DoRms 커뮤니티 이미지: `public/assets/dorms-community.png`
 - 카드 그림: 원본은 `art-raw/<링크 id>.png`(git 제외), `npm run art`로 `public/visuals/`에 WebP를 만든 뒤 링크의 `cover`에 `/visuals/covers/<링크 id>`를 적는다. 화풍 규칙은 `docs/showroom-art-brief.md`.
-- 첫 화면 3D 조형물과 묶음 표장: `scripts/blender/sculpture.py`(Blender 5.2, `--mode turntable --frames 60 --size 720`과 `--mode emblems --size 512`)로 `art-raw/render/`에 렌더한 뒤 `npm run art`. 소품 원본은 `art-raw/3d/*.glb`(Meshy, `docs/showroom-3d-brief.md`). 프레임 수를 바꾸면 `HeroSculpture.tsx`의 `FRAMES`와 `scripts/check-links.mjs`도 같이 바꾼다.
+- 첫 화면 3D 조형물과 묶음 표장: `scripts/blender/sculpture.py`(Blender 5.2, `--mode turntable --frames 60 --size 1080`과 `--mode emblems --size 512`)로 `art-raw/render/`에 렌더한 뒤 `npm run art`. 소품 원본은 `art-raw/3d/*.glb`(Meshy, `docs/showroom-3d-brief.md`). 프레임 수를 바꾸면 `HeroSculpture.tsx`의 `FRAMES`와 `scripts/check-links.mjs`도 같이 바꾼다.
 - Meshy 무료 플랜 소품은 CC BY 4.0이다. 화면 아래쪽 출처 문구(`Showroom.tsx`의 `sr-credit`)를 지우지 않는다.
 
 ## 검증

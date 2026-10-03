@@ -21,7 +21,7 @@ export default function HeroSculpture() {
   const { scrollYProgress } = useScroll({ target: wrapRef, offset: ["start end", "end start"] });
 
   useEffect(() => {
-    const size = window.innerWidth < 768 ? 400 : 600;
+    const size = window.innerWidth < 768 ? 480 : 720;
     const list = Array.from({ length: FRAMES }, () => new Image());
     frames.current = list;
     // Show the first frame quickly, then fetch the rest.
@@ -68,7 +68,7 @@ export default function HeroSculpture() {
       transition={{ delay: 0.5, duration: 1.1, ease: EASE }}
       style={{ y: lift }}
     >
-      <canvas ref={canvasRef} width={600} height={600} />
+      <canvas ref={canvasRef} width={720} height={720} />
     </motion.div>
   );
 }
