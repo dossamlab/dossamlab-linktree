@@ -157,7 +157,8 @@ export const cards: LinkCard[] = [
         tag: "물리 레이싱",
         description: "빛의 속도가 350 km/h인 서킷에서 시간 팽창·길이 수축을 직접 겪는 특수 상대성 이론 레이싱",
         href: "https://dorms.school/apps/1153fbab-4ff9-4e17-aee8-79dfc55fa33d",
-        thumb: { kind: "icon", icon: "game" }
+        thumb: { kind: "icon", icon: "game" },
+        cover: "/visuals/covers/gamma-grand-prix"
       },
       {
         id: "science-legacy",
