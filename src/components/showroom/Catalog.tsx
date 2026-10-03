@@ -16,11 +16,14 @@ export default function Catalog({ onOpen }: { onOpen: (open: OpenCard) => void }
       {groups.map((group) => (
         <section key={group.id} id={`group-${group.id}`} className="sr-group" aria-labelledby={`group-${group.id}-title`}>
           <div className="sr-group-head" data-spiral-anchor>
-            <h2 id={`group-${group.id}-title`} className="sr-group-title">
-              <span className="sr-group-num">{group.number}</span>
-              {group.name}
-            </h2>
-            <p className="sr-group-desc">{group.description}</p>
+            {group.emblem ? <img className="sr-emblem" src={group.emblem} alt="" width={64} height={64} /> : null}
+            <div>
+              <h2 id={`group-${group.id}-title`} className="sr-group-title">
+                <span className="sr-group-num">{group.number}</span>
+                {group.name}
+              </h2>
+              <p className="sr-group-desc">{group.description}</p>
+            </div>
           </div>
           <div className="sr-grid">
             {itemsOf(group).map((item, index) => (

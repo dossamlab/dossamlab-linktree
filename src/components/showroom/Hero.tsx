@@ -3,6 +3,7 @@
 import { Fragment } from "react";
 import { motion } from "motion/react";
 import { profile } from "@/config/linktree";
+import HeroSculpture from "./HeroSculpture";
 import { EASE, directLinks, groups, newTabProps } from "./utils";
 
 const fadeUp = (delay: number) => ({
@@ -61,6 +62,7 @@ export default function Hero() {
           </a>
         ))}
       </motion.div>
+      <HeroSculpture />
     </header>
   );
 }

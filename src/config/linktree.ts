@@ -38,6 +38,8 @@ export type LinkCard =
       shortName: string;
       description: string;
       thumb: Thumb;
+      // Small 3D emblem next to the group title, e.g. "/visuals/emblems/science.webp".
+      emblem?: string;
       items: LinkItem[];
     }
   | {
@@ -65,6 +67,7 @@ export const cards: LinkCard[] = [
     shortName: "도름스 활동",
     description: "DoRms에서 나누고 있는 나의 활동을 모아두는 곳",
     thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" },
+    emblem: "/visuals/emblems/dorms.webp",
     items: [
       {
         id: "dossam-profile",
@@ -124,6 +127,7 @@ export const cards: LinkCard[] = [
     shortName: "과학 웹앱",
     description: "설치 없이 링크 하나로 여는 과학 수업용 웹앱",
     thumb: { kind: "icon", icon: "game" },
+    emblem: "/visuals/emblems/science.webp",
     // "세포 이스케이프: 항상성 붕괴"(apps/0d294a5a-...), "딱! 이만큼-생활 연구소 방탈출"(apps/6573d388-...)처럼
     // 다른 제작자가 올리고 도쌤은 "함께 만든"으로만 표시된 앱은 넣지 않는다.
     items: [
@@ -202,6 +206,7 @@ export const cards: LinkCard[] = [
     shortName: "학급 도구",
     description: "교실 운영과 행정 업무의 손을 덜어주는 도구",
     thumb: { kind: "icon", icon: "school" },
+    emblem: "/visuals/emblems/classroom.webp",
     items: [
       {
         id: "spirit-summon",

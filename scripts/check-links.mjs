@@ -18,7 +18,10 @@ const groups = cards.filter((card) => card.kind === "group");
 const items = groups.flatMap((group) => group.items);
 const ids = new Set();
 
-for (const group of groups) assert.ok(group.shortName?.trim(), `shortName 없음: ${group.id}`);
+for (const group of groups) {
+  assert.ok(group.shortName?.trim(), `shortName 없음: ${group.id}`);
+  if (group.emblem) assert.ok(existsSync(`public${group.emblem}`), `표장 파일 없음: public${group.emblem}`);
+}
 
 for (const item of items) {
   assert.match(item.id ?? "", /^[a-z0-9]+(-[a-z0-9]+)*$/, `id 형식 오류: ${item.name}`);
