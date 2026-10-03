@@ -12,7 +12,8 @@
   "scripts": {
     "dev": "next dev",
     "build": "next build",
-    "start": "next start"
+    "start": "next start",
+    "check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-links.mjs"
   },
   "dependencies": {
     "@paper-design/shaders-react": "^0.0.77",
