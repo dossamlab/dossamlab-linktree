@@ -14,3 +14,5 @@ pnpm-debug.log*
 .claude/
 
 .vercel
+
+/art-raw/
