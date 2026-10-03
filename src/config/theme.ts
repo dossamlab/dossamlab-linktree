@@ -1,45 +1,36 @@
-export type PillColor = {
-  bg: string;
-  fg: string;
-};
-
 export type LinkTreeTheme = {
   colors: {
-    cream: string;
+    bg: string;
+    bgGlow: string;
+    card: string;
     ink: string;
+    title: string;
     dim: string;
-    rose: string;
-    brown: string;
-    denim: string;
-    latte: string;
-    border: string;
-    scrollTrack: string;
-    scrollThumb: string;
-    scrollThumbHover: string;
-    spiralFront: string;
+    line: string;
+    gold: string;
+    lilac: string;
   };
-  pillColors: PillColor[];
+  // Gradient pairs for cards that have no illustration yet.
+  artFallbacks: [string, string][];
 };
 
 export const theme: LinkTreeTheme = {
   colors: {
-    cream: "#F4F2F8",
-    ink: "#3B3A45",
-    dim: "#86838F",
-    rose: "#E7C6DC",
-    brown: "#5D5A6B",
-    denim: "#9BB4D4",
-    latte: "#CFE0D6",
-    border: "rgba(93,90,107,0.15)",
-    scrollTrack: "rgba(155,180,212,0.20)",
-    scrollThumb: "linear-gradient(180deg, rgba(93,90,107,0.60), rgba(155,180,212,0.55))",
-    scrollThumbHover: "linear-gradient(180deg, rgba(59,58,69,0.72), rgba(155,180,212,0.70))",
-    spiralFront: "#A9B8E8"
+    bg: "#0C0F24",
+    bgGlow: "rgba(110,125,230,0.38)",
+    card: "#151936",
+    ink: "#EDEBFA",
+    title: "#F7E7C4",
+    dim: "#9EA3C6",
+    line: "rgba(255,255,255,0.10)",
+    gold: "#F2C879",
+    lilac: "#A9B8E8"
   },
-  pillColors: [
-    { bg: "#E7C6DC", fg: "#3B3A45" },
-    { bg: "#CFE0D6", fg: "#3B3A45" },
-    { bg: "#9BB4D4", fg: "#2B2A33" },
-    { bg: "#F0E0BC", fg: "#3B3A45" }
+  artFallbacks: [
+    ["#1A1F45", "#3A4290"],
+    ["#1B2A4A", "#2F5F8A"],
+    ["#2A1F45", "#5A3F8A"],
+    ["#1F3340", "#2F6A6F"],
+    ["#33264A", "#7A5A9A"]
   ]
 };

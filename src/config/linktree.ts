@@ -51,13 +51,9 @@ export type LinkCard =
     };
 
 export const profile = {
-  teacherName: "도쌤",
   title: "청학고 교사 도쌤",
   heroTitle: "Dossam Lab",
-  introTitle: "DoRms 교사 도쌤",
-  introDescription: "웹앱으로 신나는 학교를 만들어보고 싶은 도쌤의 링크트리",
-  catalogTitle: "DoRms 도쌤",
-  catalogDescription: "수업 웹앱, 학급 운영 도구, 연수 자료를 한곳에 모았습니다."
+  description: "웹앱으로 신나는 학교를 만들어보고 싶은 도쌤의 링크트리"
 };
 
 export const cards: LinkCard[] = [
