@@ -6,6 +6,7 @@ import { theme } from "@/config/theme";
 import CardDetail from "./CardDetail";
 import Catalog from "./Catalog";
 import Hero from "./Hero";
+import Marquee from "./Marquee";
 import { directLinks, groups, newTabProps, type OpenCard } from "./utils";
 
 export default function Showroom({ initialTab }: { initialTab?: string }) {
@@ -46,6 +47,7 @@ export default function Showroom({ initialTab }: { initialTab?: string }) {
         <div className="sr-root" style={rootStyle}>
           <div className="sr-sky" aria-hidden="true" />
           <Hero />
+          <Marquee onOpen={setOpen} paused={open !== null} />
           <Catalog onOpen={setOpen} />
           <footer className="sr-foot">
             {directLinks.map((link) => (
