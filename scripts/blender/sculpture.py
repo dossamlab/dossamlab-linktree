@@ -124,19 +124,21 @@ def planet_material():
     nodes, links = mat.node_tree.nodes, mat.node_tree.links
     bsdf = nodes["Principled BSDF"]
     noise = nodes.new("ShaderNodeTexNoise")
-    noise.inputs["Scale"].default_value = 2.4
-    noise.inputs["Detail"].default_value = 6.0
-    noise.inputs["Distortion"].default_value = 3.2
+    noise.inputs["Scale"].default_value = 1.8
+    noise.inputs["Detail"].default_value = 8.0
+    noise.inputs["Distortion"].default_value = 5.0
     ramp = nodes.new("ShaderNodeValToRGB")
     elements = ramp.color_ramp.elements
-    elements[0].position, elements[0].color = 0.3, (*lin("#7F8FE0"), 1)
-    elements[1].position, elements[1].color = 0.82, (*lin("#FFF4DC"), 1)
-    mid = elements.new(0.56)
-    mid.color = (*lin(GOLD), 1)
+    # Marbled lilac and white with bright gold swirl bands, like the card illustrations.
+    elements[0].position, elements[0].color = 0.3, (*lin("#4F60C4"), 1)
+    elements[1].position, elements[1].color = 0.78, (*lin("#FFE9C2"), 1)
+    for position, color in ((0.46, "#A9A6EE"), (0.58, "#FFB547")):
+        stop = elements.new(position)
+        stop.color = (*lin(color), 1)
     links.new(noise.outputs["Fac"], ramp.inputs["Fac"])
     links.new(ramp.outputs["Color"], bsdf.inputs["Base Color"])
     links.new(ramp.outputs["Color"], bsdf.inputs["Emission Color"])
-    bsdf.inputs["Emission Strength"].default_value = 0.85
+    bsdf.inputs["Emission Strength"].default_value = 0.55
     bsdf.inputs["Roughness"].default_value = 0.45
     return mat
 
@@ -356,7 +358,7 @@ def build_sculpture():
         holder.rotation_euler = (0, 0, a + math.pi / 2)
         item = prop(name)
         item.parent = holder
-        item.scale = tuple(c * 0.3 for c in item.scale)
+        item.scale = tuple(c * 0.34 for c in item.scale)
     return root
 
 

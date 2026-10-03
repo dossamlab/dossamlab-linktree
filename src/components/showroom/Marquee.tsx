@@ -4,6 +4,7 @@ import { useRef, useState } from "react";
 import {
   motion,
   useAnimationFrame,
+  useInView,
   useMotionValue,
   useReducedMotion,
   useScroll,
@@ -21,7 +22,10 @@ const STRIP_SIZES = "(max-width: 767px) 160px, 220px";
 
 export default function Marquee({ onOpen, paused }: { onOpen: (open: OpenCard) => void; paused: boolean }) {
   const reduce = useReducedMotion();
+  const sectionRef = useRef<HTMLElement>(null);
   const trackRef = useRef<HTMLDivElement>(null);
+  // No work while the strip is off screen (saves battery on phones).
+  const visible = useInView(sectionRef, { margin: "200px 0px" });
   const [held, setHeld] = useState(false);
   const x = useMotionValue(0);
   const { scrollY } = useScroll();
@@ -33,7 +37,7 @@ export default function Marquee({ onOpen, paused }: { onOpen: (open: OpenCard) =
     const track = trackRef.current;
     // While the page scrolls, the strip slides under a resting cursor; keep moving so the scroll boost shows.
     const scrolling = Math.abs(scrollSpeed.get()) > 50;
-    if (reduce || paused || !track || (held && !scrolling)) return;
+    if (reduce || paused || !visible || !track || (held && !scrolling)) return;
     // Each slot carries its own right margin, so half the width is exactly one copy.
     const loop = track.scrollWidth / 2;
     if (!loop) return;
@@ -44,6 +48,7 @@ export default function Marquee({ onOpen, paused }: { onOpen: (open: OpenCard) =
 
   return (
     <motion.section
+      ref={sectionRef}
       className="sr-marquee"
       aria-label="모든 링크 미리보기"
       initial={{ opacity: 0, x: 80 }}

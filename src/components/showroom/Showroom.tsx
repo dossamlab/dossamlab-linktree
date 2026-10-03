@@ -56,6 +56,11 @@ export default function Showroom({ initialTab }: { initialTab?: string }) {
                 <span>{link.description}</span>
               </a>
             ))}
+            {/* Meshy free-plan models are CC BY 4.0, so the credit has to stay on the page. */}
+            <p className="sr-credit">
+              첫 화면 조형물의 3D 소품은 <a href="https://www.meshy.ai/" target="_blank" rel="noopener noreferrer">Meshy</a>로 만들고
+              Blender로 다듬었습니다. <a href="https://creativecommons.org/licenses/by/4.0/" target="_blank" rel="noopener noreferrer">CC BY 4.0</a>
+            </p>
           </footer>
           <CardDetail open={open} onClose={closeDetail} />
         </div>

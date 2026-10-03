@@ -37,5 +37,13 @@ for (const item of items) {
   }
 }
 
+// HeroSculpture.tsx expects 60 turntable frames in both sizes.
+for (const size of [600, 400]) {
+  for (let i = 0; i < 60; i++) {
+    const file = `public/visuals/sculpture/${size}/f-${String(i).padStart(3, "0")}.webp`;
+    assert.ok(existsSync(file), `조형물 그림 없음: ${file}`);
+  }
+}
+
 assert.ok(!JSON.stringify(cards).includes("—"), "긴 줄표 문자는 쓰지 않음");
 console.log(`ok: 묶음 ${groups.length}개, 링크 ${items.length}개`);

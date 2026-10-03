@@ -7,7 +7,8 @@ const display = Fraunces({ subsets: ["latin"], variable: "--font-display", displ
 const body = Noto_Sans_KR({ subsets: ["latin"], variable: "--font-body", display: "swap" });
 
 export const metadata: Metadata = {
-  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "http://localhost:3000"),
+  // Without NEXT_PUBLIC_SITE_URL the share-preview image pointed at localhost, so default to the live address.
+  metadataBase: new URL(process.env.NEXT_PUBLIC_SITE_URL || "https://dossamlink.vercel.app"),
   title: profile.title,
   description: profile.description,
   openGraph: {

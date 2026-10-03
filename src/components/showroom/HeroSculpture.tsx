@@ -29,6 +29,8 @@ export default function HeroSculpture() {
       const canvas = canvasRef.current;
       if (canvas) canvas.width = canvas.height = size;
       drawn.current = -1; // resizing clears the canvas
+      // With reduced motion only the first frame is shown, so skip downloading the rest.
+      if (window.matchMedia("(prefers-reduced-motion: reduce)").matches) return;
 
       list.slice(1).forEach((image, index) => {
         image.decoding = "async";
