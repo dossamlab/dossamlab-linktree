@@ -13,7 +13,8 @@
     "dev": "next dev",
     "build": "next build",
     "start": "next start",
-    "check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-links.mjs"
+    "check": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON scripts/check-links.mjs",
+    "art": "node scripts/convert-art.mjs"
   },
   "dependencies": {
     "motion": "^14.0.0",
@@ -25,6 +26,7 @@
     "@types/node": "^20",
     "@types/react": "^19",
     "@types/react-dom": "^19",
+    "sharp": "^0.34.5",
     "typescript": "^5"
   },
   "overrides": {
