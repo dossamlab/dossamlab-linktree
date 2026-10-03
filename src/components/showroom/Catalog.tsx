@@ -1,14 +1,18 @@
 "use client";
 
+import { useRef } from "react";
 import { motion } from "motion/react";
 import ShowcaseCard from "./ShowcaseCard";
+import SpiralPath from "./SpiralPath";
 import { EASE, groups, itemsOf, type OpenCard } from "./utils";
 
 const GRID_SIZES = "(max-width: 767px) 50vw, (max-width: 1099px) 33vw, 260px";
 
 export default function Catalog({ onOpen }: { onOpen: (open: OpenCard) => void }) {
+  const ref = useRef<HTMLElement>(null);
   return (
-    <main id="catalog" className="sr-catalog">
+    <main id="catalog" ref={ref} className="sr-catalog">
+      <SpiralPath targetRef={ref} />
       {groups.map((group) => (
         <section key={group.id} id={`group-${group.id}`} className="sr-group" aria-labelledby={`group-${group.id}-title`}>
           <div className="sr-group-head" data-spiral-anchor>
