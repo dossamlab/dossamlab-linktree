@@ -14,7 +14,8 @@ export const metadata: Metadata = {
   openGraph: {
     title: profile.title,
     description: profile.description,
-    images: ["/assets/dorms-community.png"]
+    // Share preview (KakaoTalk etc.): the showroom hero, 1200x630 JPG. Made from a page screenshot.
+    images: [{ url: "/og.jpg", width: 1200, height: 630, alt: "Dossam Lab 쇼룸 첫 화면" }]
   }
 };
 
