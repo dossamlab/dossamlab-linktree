@@ -214,7 +214,8 @@ export const cards: LinkCard[] = [
         tag: "물리 게임",
         description: "열역학 제1법칙을 카페 타이쿤으로, Q·W·ΔU 부호를 영수증으로 예측하고 확인",
         href: "https://dorms.school/apps/ce0bea08-30a7-48a1-8ee4-62e3f7bd4cf9",
-        thumb: { kind: "icon", icon: "game" }
+        thumb: { kind: "icon", icon: "game" },
+        cover: "/visuals/covers/ideal-gas-tycoon"
       }
     ]
   },
@@ -261,7 +262,8 @@ export const cards: LinkCard[] = [
         tag: "교사 살림",
         description: "우리 가족 보험을 한눈에 정리하고 빈틈을 찾는 도구, 내 구글 드라이브 안에서만 동작",
         href: "https://dorms.school/apps/765fa712-5eb5-4a8c-a597-c8726fcf3cf1",
-        thumb: { kind: "icon", icon: "manual" }
+        thumb: { kind: "icon", icon: "manual" },
+        cover: "/visuals/covers/famcovery"
       }
     ]
   },
