@@ -207,6 +207,14 @@ export const cards: LinkCard[] = [
         href: "https://dorms.school/apps/7892e65a-1cdd-4424-ab12-c2f0fa14101c?cat=%EA%B5%90%EA%B3%BC%C2%B7%EC%88%98%EC%97%85&sort=hot&layout=card",
         thumb: { kind: "icon", icon: "game" },
         cover: "/visuals/covers/stargazing-class"
+      },
+      {
+        id: "ideal-gas-tycoon",
+        name: "몽글몽글 이상기체 타이쿤",
+        tag: "물리 게임",
+        description: "열역학 제1법칙을 카페 타이쿤으로, Q·W·ΔU 부호를 영수증으로 예측하고 확인",
+        href: "https://dorms.school/apps/ce0bea08-30a7-48a1-8ee4-62e3f7bd4cf9",
+        thumb: { kind: "icon", icon: "game" }
       }
     ]
   },
@@ -246,6 +254,14 @@ export const cards: LinkCard[] = [
         href: "https://dorms.school/apps/80dcc2aa-0fe7-472f-acc9-b39f08f8ac29",
         thumb: { kind: "icon", icon: "school" },
         cover: "/visuals/covers/today-mood"
+      },
+      {
+        id: "famcovery",
+        name: "팸커버리",
+        tag: "교사 살림",
+        description: "우리 가족 보험을 한눈에 정리하고 빈틈을 찾는 도구, 내 구글 드라이브 안에서만 동작",
+        href: "https://dorms.school/apps/765fa712-5eb5-4a8c-a597-c8726fcf3cf1",
+        thumb: { kind: "icon", icon: "manual" }
       }
     ]
   },
