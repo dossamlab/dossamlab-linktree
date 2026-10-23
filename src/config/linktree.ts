@@ -183,9 +183,9 @@ export const cards: LinkCard[] = [
       },
       {
         id: "dossam-lab",
-        name: "도쌤Lab 통합 과학 탐구 시뮬레이터",
+        name: "도쌤Lab 중·고 과학 탐구 시뮬레이터",
         tag: "탐구 시뮬레이터",
-        description: "중학 과학부터 고등 물리·화학·통합과학까지, 3D 탐구활동 15종을 담은 통합본",
+        description: "중학 과학과 고등 물리·화학 등 여러 과목의 3D 탐구활동 15종을 한곳에 모은 시뮬레이터",
         href: "https://dorms.school/apps/efbc012b-1c0e-4b20-8def-6f9460bb89d4",
         thumb: { kind: "icon", icon: "school" },
         cover: "/visuals/covers/dossam-lab"
@@ -267,11 +267,12 @@ export const cards: LinkCard[] = [
       },
       {
         id: "school-tour",
-        name: "학교 여행",
+        name: "학교 여행: 교문부터 걸어 보는 3D 학교 안내",
         tag: "학교 안내",
         description: "교문부터 교실까지 걸어 보는 3D 학교 안내, 우리 학교로 바꿔 쓰는 템플릿",
         href: "https://dorms.school/apps/d5f90199-1c14-4a28-822c-3ad8c4371a5d",
-        thumb: { kind: "icon", icon: "school" }
+        thumb: { kind: "icon", icon: "school" },
+        cover: "/visuals/covers/school-tour"
       }
     ]
   },
