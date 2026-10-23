@@ -75,7 +75,8 @@ export const cards: LinkCard[] = [
         tag: "프로필",
         description: "DoRms에 쓴 글과 만든 앱을 한곳에서 모아보는 프로필 페이지",
         href: "https://dorms.school/u/f7fed535-6427-460a-b339-2a5f58bb89a8",
-        thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" }
+        thumb: { kind: "image", src: "/assets/dorms-community.png", alt: "DoRms community" },
+        cover: "/visuals/covers/dossam-profile"
       },
       {
         id: "dokipedia",

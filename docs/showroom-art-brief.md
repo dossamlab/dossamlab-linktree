@@ -64,9 +64,10 @@ Isometric 3D miniature diorama, handcrafted clay and painted-resin toy look, sof
 | 18 | `ideal-gas-tycoon.png` | 몽글몽글 이상기체 타이쿤 (2026-10-14 추가) | A cozy miniature cafe counter where a glass mug filled with soft glowing gas bubbles sits on a small warmer, a tiny barista robot holding a blank receipt, a thermal tumbler and an ice pack beside it. |
 | 19 | `famcovery.png` | 팸커버리 (2026-10-14 추가) | A miniature cozy house with a large soft umbrella over its roof sheltering four tiny family figures, a small open folder of blank document cards and a little shield beside the door. |
 | 20 | `school-tour.png` | 학교 여행 (2026-10-23 추가) | A miniature school campus with an open front gate, a stone path leading to the main entrance, a cutaway five-story school building showing hallways and classrooms, and two tiny figures walking along the path with a small blank map. |
+| 21 | `dossam-profile.png` | 도쌤 프로필 (2026-10-24 추가) | A cozy miniature teacher's studio: a small wooden desk with a glowing laptop showing blank app windows, a tall display shelf behind it holding tiny models of the showroom items (a rocket, a flask, a little planet, a book stack), a mug and a sprouting plant, warm lamp light. No people. |
 | 17 | `hero-bg.png` | 첫 화면 배경 (16:9) | A wide panoramic view of a miniature night science museum hall: rows of small glowing display pedestals with tiny exhibits (planet, atom, telescope, beaker), a domed ceiling full of stars, golden spotlights, a large dark empty area in the center for a title, very soft and slightly blurred. |
 
-도쌤 프로필 카드는 기존 DoRms 대표 이미지를 쓰므로 만들지 않는다.
+도쌤 프로필 카드는 처음에는 DoRms 대표 이미지를 썼지만, 2026-10-24부터 21번 그림을 쓴다. 첫 묶음의 탭 그림(`/assets/dorms-community.png`)은 저장소 규칙대로 그대로 둔다.
 
 ## 끝내기 전 확인
 
