@@ -63,6 +63,7 @@ Isometric 3D miniature diorama, handcrafted clay and painted-resin toy look, sof
 | 16 | `today-mood.png` | 오늘의 기분 | A miniature classroom with a large screen showing floating colorful blank speech bubbles and a cloud of blank word tiles, tiny student figures holding phones toward an abstract square pattern. |
 | 18 | `ideal-gas-tycoon.png` | 몽글몽글 이상기체 타이쿤 (2026-10-14 추가) | A cozy miniature cafe counter where a glass mug filled with soft glowing gas bubbles sits on a small warmer, a tiny barista robot holding a blank receipt, a thermal tumbler and an ice pack beside it. |
 | 19 | `famcovery.png` | 팸커버리 (2026-10-14 추가) | A miniature cozy house with a large soft umbrella over its roof sheltering four tiny family figures, a small open folder of blank document cards and a little shield beside the door. |
+| 20 | `school-tour.png` | 학교 여행 (2026-10-23 추가) | A miniature school campus with an open front gate, a stone path leading to the main entrance, a cutaway five-story school building showing hallways and classrooms, and two tiny figures walking along the path with a small blank map. |
 | 17 | `hero-bg.png` | 첫 화면 배경 (16:9) | A wide panoramic view of a miniature night science museum hall: rows of small glowing display pedestals with tiny exhibits (planet, atom, telescope, beaker), a domed ceiling full of stars, golden spotlights, a large dark empty area in the center for a title, very soft and slightly blurred. |
 
 도쌤 프로필 카드는 기존 DoRms 대표 이미지를 쓰므로 만들지 않는다.

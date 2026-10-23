@@ -264,6 +264,14 @@ export const cards: LinkCard[] = [
         href: "https://dorms.school/apps/765fa712-5eb5-4a8c-a597-c8726fcf3cf1",
         thumb: { kind: "icon", icon: "manual" },
         cover: "/visuals/covers/famcovery"
+      },
+      {
+        id: "school-tour",
+        name: "학교 여행",
+        tag: "학교 안내",
+        description: "교문부터 교실까지 걸어 보는 3D 학교 안내, 우리 학교로 바꿔 쓰는 템플릿",
+        href: "https://dorms.school/apps/d5f90199-1c14-4a28-822c-3ad8c4371a5d",
+        thumb: { kind: "icon", icon: "school" }
       }
     ]
   },
